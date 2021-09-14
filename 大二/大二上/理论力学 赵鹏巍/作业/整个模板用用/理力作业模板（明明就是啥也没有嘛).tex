@@ -1,0 +1,86 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{ctex}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\author{}
+\date{}
+
+\begin{document}
+
+\hypertarget{ux5b9eux9a8cux6027ux6587ux6863}{%
+\section{实验性文档}\label{ux5b9eux9a8cux6027ux6587ux6863}}
+
+\hypertarget{1ux968fux4fbfux8bd5ux8bd5}{%
+\subsection{1.随便试试}\label{1ux968fux4fbfux8bd5ux8bd5}}
+
+\hypertarget{2ux8fd8ux662fux968fux4fbfux8bd5ux8bd5}{%
+\subsection{2.还是随便试试}\label{2ux8fd8ux662fux968fux4fbfux8bd5ux8bd5}}
+
+1.打个公式
+\[F=ma\]
+句间公式：\(F=ma\)
+2.随便再写点啥
+好了
+试试编号：
+\[(\psi,\phi)=<\psi|\phi>\tag{1}\]
+多行公式：
+\[
+	\begin{aligned}
+	\dot{\bf x}&=A\mathbf x+B\bf u\\
+	y&=C\bf x
+	\end{aligned}\tag{5}
+\]
+\[
+\delta_{i,j}=\begin{cases}
+	1\quad(i=j)\\
+	0\quad(i\neq j)
+\end{cases}\tag{7}
+\]
+\subsection{就用这个当理力作业模板算了，别整的花里胡哨了}
+\end{document}
